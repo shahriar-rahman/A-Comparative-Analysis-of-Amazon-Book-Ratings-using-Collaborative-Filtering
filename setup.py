@@ -6,5 +6,5 @@ setup(
     version='0.1.0',
     description='This is a simple data science template project folder.',
     author='Shahriar',
-    license='',
+    license='MIT License',
 )
