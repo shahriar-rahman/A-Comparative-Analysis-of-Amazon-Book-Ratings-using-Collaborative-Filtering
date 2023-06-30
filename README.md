@@ -14,6 +14,15 @@ attributed to websites, movies, music, arts, articles, jokes, finance, and books
 such as Collaborative Filtering (CF) have been widely adopted as one of the crucial pieces of the large puzzle that is the 
 recommenders.
 
+### Objective:
+The primary incentive of this research is to:
+* Initiate an exploratory analysis of the acquired data to find indispensable patterns of the feature that makes up the data.
+* Conduct a comparative analysis of features.
+* Utilize multiple types of CF on the processed features.
+* Experiment with different Hyper-parameters to obtain a well-organized tuning for the models.
+* Compare and analyze which models display the most robust generalization.
+
+
 Project Organization
 ------------
 
