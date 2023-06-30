@@ -1,7 +1,9 @@
-default_template_project
-==============================
+===========================================================================
+A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering
 
-This is a simple data science template project folder.
+Constructing Recommender Models by analyzing the Amazon Book Ratings data and juxtaposing different algorithms based on 
+the concept of Collaborative Filtering to perceive the ideal approach.
+
 
 Project Organization
 ------------
