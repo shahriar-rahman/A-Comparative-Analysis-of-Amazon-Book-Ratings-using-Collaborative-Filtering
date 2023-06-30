@@ -1,5 +1,5 @@
 ===========================================================================
-# A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering
+# A Comparative Analysis of Amazon Book Ratings using Collaborative Filtering
 
 Constructing Recommender Models by analyzing the Amazon Book Ratings data and juxtaposing different algorithms based on 
 the concept of Collaborative Filtering to perceive the ideal approach.
