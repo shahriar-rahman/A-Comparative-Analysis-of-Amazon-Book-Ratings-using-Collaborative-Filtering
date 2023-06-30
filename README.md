@@ -6,6 +6,14 @@ the concept of Collaborative Filtering to perceive the ideal approach.
 
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(5).jpg)
 
+### Introduction:
+People depend on recommender systems on a regular basis, whether for news updates, stock markets, traveling guides, 
+spoken words, advertisements, reference letters, global surveys, and so forth. The natural social procedure is heavily expanded 
+upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
+attributed to websites, movies, music, arts, articles, jokes, finance, and books. Therefore, it is no surprise that algorithms 
+such as Collaborative Filtering (CF) have been widely adopted as one of the crucial pieces of the large puzzle that is the 
+recommenders.
+
 Project Organization
 ------------
 
