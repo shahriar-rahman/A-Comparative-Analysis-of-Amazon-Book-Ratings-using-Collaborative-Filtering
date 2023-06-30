@@ -1,9 +1,10 @@
 ===========================================================================
-A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering
+# A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering
 
 Constructing Recommender Models by analyzing the Amazon Book Ratings data and juxtaposing different algorithms based on 
 the concept of Collaborative Filtering to perceive the ideal approach.
 
+![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(5).jpg)
 
 Project Organization
 ------------
