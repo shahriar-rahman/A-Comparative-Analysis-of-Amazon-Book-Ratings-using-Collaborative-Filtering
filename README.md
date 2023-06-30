@@ -21,7 +21,7 @@ The primary incentive of this research is to:
 * Utilize multiple types of CF on the processed features.
 * Experiment with different Hyper-parameters to obtain a well-organized tuning for the models.
 * Compare and analyze which models display the most robust generalization.
-
+![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(14).jpg)
 
 Project Organization
 ------------
