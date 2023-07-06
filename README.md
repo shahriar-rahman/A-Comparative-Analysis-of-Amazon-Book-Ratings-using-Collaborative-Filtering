@@ -51,7 +51,7 @@ Project Organization:
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
-    ├── figures            <- Generated graphics and figures to be used in reporting
+    ├── figures            <- Generated graphics and figures obtained from visualization.py
     │   └── ide_graphs           <- Generated using PyCharm IDE
     │   └── notebook_graphs    <- Generated using Jupyter Notebooks
     │
