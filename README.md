@@ -4,8 +4,11 @@
 Constructing Recommender Models by analyzing the Amazon Book Ratings data and juxtaposing different algorithms based on 
 the concept of Collaborative Filtering to perceive the ideal approach.
 
+<br/>
+
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(5).jpg)
 
+<br/>
 
 ### ◘ Introduction
 People depend on recommender systems on a regular basis, whether for news updates, stock markets, traveling guides, 
@@ -15,6 +18,7 @@ attributed to websites, movies, music, arts, articles, jokes, finance, and books
 such as Collaborative Filtering (CF) have been widely adopted as one of the crucial pieces of the large puzzle that is the 
 recommenders.
 
+<br/><br/>
 
 ### ◘ Objective
 The primary incentive of this research is to:
@@ -24,9 +28,7 @@ The primary incentive of this research is to:
 * Experiment with different Hyper-parameters to obtain a well-organized tuning for the models.
 * Compare and analyze which models display the most robust generalization.
 
-
-![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(14).jpg)
-
+<br/>
 
 ### ◘ Approach
 This research is classified into 6 steps:
@@ -37,8 +39,11 @@ This research is classified into 6 steps:
 5.	Experiment and Diagnose in order to achieve the best Hyper-parameters for building efficient models.
 6.	Result Analysis and Comparison.
 
+<br/>
 
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(14).jpg)
+
+<br/>
 
 ### ◘ Methodologies & Technologies applied
 * Diagnose and fix structural errors
@@ -51,6 +56,8 @@ This research is classified into 6 steps:
 * Apply test set to the previously trained models
 * Compare & Analyze the results
 
+<br/>
+
 ### ◘ Required Modules
 * pandas 2.0.0
 * missingNo 0.5.2
@@ -61,6 +68,7 @@ This research is classified into 6 steps:
 * plotly 5.15.0
 * numpy 1.24.2
 
+<br/><br/>
 
 ### ◘ Project Organization
 ------------
@@ -109,3 +117,5 @@ This research is classified into 6 steps:
     ¦
     +-- tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 --------
+<br/><br/>
+===========================================================================
