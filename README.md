@@ -6,7 +6,11 @@ the concept of Collaborative Filtering to perceive the ideal approach.
 
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(5).jpg)
 
+<<<<<<< Updated upstream
 ### Introduction:
+=======
+### ◘ Introduction
+>>>>>>> Stashed changes
 People depend on recommender systems on a regular basis, whether for news updates, stock markets, traveling guides, 
 spoken words, advertisements, reference letters, global surveys, and so forth. The natural social procedure is heavily expanded 
 upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
@@ -14,7 +18,11 @@ attributed to websites, movies, music, arts, articles, jokes, finance, and books
 such as Collaborative Filtering (CF) have been widely adopted as one of the crucial pieces of the large puzzle that is the 
 recommenders.
 
+<<<<<<< Updated upstream
 ### Objective:
+=======
+### ◘ Objective
+>>>>>>> Stashed changes
 The primary incentive of this research is to:
 * Initiate an exploratory analysis of the acquired data to find indispensable patterns of the feature that makes up the data.
 * Conduct a comparative analysis of features.
@@ -22,9 +30,13 @@ The primary incentive of this research is to:
 * Experiment with different Hyper-parameters to obtain a well-organized tuning for the models.
 * Compare and analyze which models display the most robust generalization.
 
+<<<<<<< Updated upstream
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(14).jpg)
 
 ### Approach:
+=======
+### ◘ Approach
+>>>>>>> Stashed changes
 This research is classified into 6 steps:
 1.	Identifying the problem and its data sources.
 2.	Construct the raw data into clean processed data and explore it using both Jupyter Notebooks and PyCharm IDE.
@@ -33,8 +45,36 @@ This research is classified into 6 steps:
 5.	Experiment and Diagnose in order to achieve the best Hyper-parameters for building efficient models.
 6.	Result Analysis and Comparison.
 
+<<<<<<< Updated upstream
 
 Project Organization:
+=======
+![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(14).jpg)
+
+### ◘ Methodologies & Technologies applied
+* Diagnose and fix structural errors
+* Check and Clean data
+* Address duplicates & perform de-duplication
+* Maintain feature consistency
+* Deep Feature Exploration	
+* Construct SVD, NMF & K-Means models
+* Train & Evaluate the generalization of the models
+* Apply test set to the previously trained models
+* Compare & Analyze the results
+
+### ◘ Required Modules
+* pandas 2.0.0
+* missingNo 0.5.2
+* matplotlib 3.7.1
+* seaborn 0.12.2
+* scikit-learn   1.2.2
+* scikit-surprise 1.1.3
+* plotly 5.15.0
+* numpy 1.24.2
+
+
+### Project Organization
+>>>>>>> Stashed changes
 ------------
     ├── LICENSE
     │
