@@ -4,11 +4,13 @@
 Constructing Recommender Models by analyzing the Amazon Book Ratings data and juxtaposing different algorithms based on 
 the concept of Collaborative Filtering to perceive the ideal approach.
 
+<br/>
+
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(5).jpg)
 
+<br/>
 
-### ? Introduction
->>>>>>> Stashed changes
+### â—˜ Introduction
 People depend on recommender systems on a regular basis, whether for news updates, stock markets, traveling guides, 
 spoken words, advertisements, reference letters, global surveys, and so forth. The natural social procedure is heavily expanded 
 upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
@@ -16,9 +18,9 @@ attributed to websites, movies, music, arts, articles, jokes, finance, and books
 such as Collaborative Filtering (CF) have been widely adopted as one of the crucial pieces of the large puzzle that is the 
 recommenders.
 
+<br/><br/>
 
-### ? Objective
->>>>>>> Stashed changes
+### â—˜ Objective
 The primary incentive of this research is to:
 * Initiate an exploratory analysis of the acquired data to find indispensable patterns of the feature that makes up the data.
 * Conduct a comparative analysis of features.
@@ -26,11 +28,9 @@ The primary incentive of this research is to:
 * Experiment with different Hyper-parameters to obtain a well-organized tuning for the models.
 * Compare and analyze which models display the most robust generalization.
 
+<br/>
 
-![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(14).jpg)
-
-
-### ? Approach
+### â—˜ Approach
 This research is classified into 6 steps:
 1.	Identifying the problem and its data sources.
 2.	Construct the raw data into clean processed data and explore it using both Jupyter Notebooks and PyCharm IDE.
@@ -39,10 +39,13 @@ This research is classified into 6 steps:
 5.	Experiment and Diagnose in order to achieve the best Hyper-parameters for building efficient models.
 6.	Result Analysis and Comparison.
 
+<br/>
 
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/main/img/amazon%20(14).jpg)
 
-### ? Methodologies & Technologies applied
+<br/>
+
+### â—˜ Methodologies & Technologies applied
 * Diagnose and fix structural errors
 * Check and Clean data
 * Address duplicates & perform de-duplication
@@ -53,7 +56,9 @@ This research is classified into 6 steps:
 * Apply test set to the previously trained models
 * Compare & Analyze the results
 
-### ? Required Modules
+<br/>
+
+### â—˜ Required Modules
 * pandas 2.0.0
 * missingNo 0.5.2
 * matplotlib 3.7.1
@@ -63,51 +68,54 @@ This research is classified into 6 steps:
 * plotly 5.15.0
 * numpy 1.24.2
 
+<br/><br/>
 
-### Project Organization
+### â—˜ Project Organization
 ------------
     +-- LICENSE
-    ¦
+    Â¦
     +-- README.md          <- The top-level README for developers using this project.
-    ¦
+    Â¦
     +-- data         		<- The original, immutable data dump.
-    ¦
-    ¦
+    Â¦
+    Â¦
     +-- models             <- Trained and serialized models, model predictions, or model summaries  
-    ¦    +-- model.pkl
-    ¦
+    Â¦    +-- model.pkl
+    Â¦
     +-- notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    ¦                         		initials, and a short `-` delimited description
-    ¦
+    Â¦                         		initials, and a short `-` delimited description
+    Â¦
     +-- references         <- Data dictionaries, manuals, and all other explanatory materials.
-    ¦
+    Â¦
     +-- figures            <- Generated graphics and figures obtained from visualization.py
-    ¦   +-- ide_graphs           <- Generated using PyCharm IDE
-    ¦   +-- notebook_graphs    <- Generated using Jupyter Notebooks
-    ¦
+    Â¦Â Â  +-- ide_graphs           <- Generated using PyCharm IDE
+    Â¦Â Â  +-- notebook_graphs    <- Generated using Jupyter Notebooks
+    Â¦
     +-- img            <- Project related files
-    ¦
+    Â¦
     +-- requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    ¦                         generated with `pip freeze > requirements.txt`
-    ¦
+    Â¦                         generated with `pip freeze > requirements.txt`
+    Â¦
     +-- setup.py           <- makes project pip installable, so that src can be imported
     +-- src                <- Source code for use in this project.
-    ¦   +-- __init__.py    
-    ¦   ¦
-    ¦   +-- data           <- Scripts to download or generate data
-    ¦   ¦   +-- make_dataset.py
-    ¦   ¦
-    ¦   +-- features       <- Scripts to turn raw data into features for modeling
-    ¦   ¦   +-- construct_features.py
-    ¦   ¦   +--  feature_analysis.py
-    ¦   ¦   +-- parent_features.py
-    ¦   ¦
-    ¦   +-- models         <- Scripts to train models and then use trained models to make predictions         
-    ¦   ¦   +-- model_test.py
-    ¦   ¦   +-- model_train.py
-    ¦   ¦
-    ¦   +-- visualization  <- Scripts to create exploratory and results oriented visualizations
-    ¦       +-- visualize.py
-    ¦
+    Â¦Â Â  +-- __init__.py    
+    Â¦   Â¦
+    Â¦Â Â  +-- data           <- Scripts to download or generate data
+    Â¦Â Â  Â¦Â Â  +-- make_dataset.py
+    Â¦   Â¦
+    Â¦Â Â  +-- features       <- Scripts to turn raw data into features for modeling
+    Â¦Â Â  Â¦Â Â  +-- construct_features.py
+    Â¦Â Â  Â¦Â Â  +--  feature_analysis.py
+    Â¦Â Â  Â¦Â Â  +-- parent_features.py
+    Â¦   Â¦
+    Â¦Â Â  +-- models         <- Scripts to train models and then use trained models to make predictions         
+    Â¦Â Â  Â¦Â Â  +-- model_test.py
+    Â¦Â Â  Â¦Â Â  +-- model_train.py
+    Â¦   Â¦
+    Â¦Â Â  +-- visualization  <- Scripts to create exploratory and results oriented visualizations
+    Â¦Â Â      +-- visualize.py
+    Â¦
     +-- tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 --------
+<br/><br/>
+===========================================================================
