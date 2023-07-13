@@ -72,50 +72,53 @@ This research is classified into 6 steps:
 
 ### ◘ Project Organization
 ------------
-    +-- LICENSE
-    ¦
-    +-- README.md          <- The top-level README for developers using this project.
-    ¦
-    +-- data         		<- The original, immutable data dump.
-    ¦
-    ¦
-    +-- models             <- Trained and serialized models, model predictions, or model summaries  
-    ¦    +-- model.pkl
-    ¦
-    +-- notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    ¦                         		initials, and a short `-` delimited description
-    ¦
-    +-- references         <- Data dictionaries, manuals, and all other explanatory materials.
-    ¦
-    +-- figures            <- Generated graphics and figures obtained from visualization.py
-    ¦   +-- ide_graphs           <- Generated using PyCharm IDE
-    ¦   +-- notebook_graphs    <- Generated using Jupyter Notebooks
-    ¦
-    +-- img            <- Project related files
-    ¦
-    +-- requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    ¦                         generated with `pip freeze > requirements.txt`
-    ¦
-    +-- setup.py           <- makes project pip installable, so that src can be imported
-    +-- src                <- Source code for use in this project.
-    ¦   +-- __init__.py    
-    ¦   ¦
-    ¦   +-- data           <- Scripts to download or generate data
-    ¦   ¦   +-- make_dataset.py
-    ¦   ¦
-    ¦   +-- features       <- Scripts to turn raw data into features for modeling
-    ¦   ¦   +-- construct_features.py
-    ¦   ¦   +--  feature_analysis.py
-    ¦   ¦   +-- parent_features.py
-    ¦   ¦
-    ¦   +-- models         <- Scripts to train models and then use trained models to make predictions         
-    ¦   ¦   +-- model_test.py
-    ¦   ¦   +-- model_train.py
-    ¦   ¦
-    ¦   +-- visualization  <- Scripts to create exploratory and results oriented visualizations
-    ¦       +-- visualize.py
-    ¦
-    +-- tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    ├─-- LICENSE
+    |
+    ├─-- README.md          <- The top-level README for developers using this project.
+    |
+    ├─-- data         		<- The original, immutable data dump.
+    |
+    |
+    ├─-- models             <- Trained and serialized models, model predictions, or model summaries  
+    |    └── model.pkl
+    |
+    ├─-- notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    |                         		initials, and a short `-` delimited description
+    |
+    ├─-- references         <- Data dictionaries, manuals, and all other explanatory materials.
+    |
+    ├─ figures            <- Generated graphics and figures obtained from visualization.py
+    |   └── ide_graphs           <- Generated using PyCharm IDE
+    |   |
+    |   └── notebook_graphs    <- Generated using Jupyter Notebooks
+    |
+    ├─-- img            <- Project related files
+    |
+    ├─-- requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    |                         generated with `pip freeze > requirements.txt`
+    |
+    ├─-- setup.py           <- makes project pip installable, so that src can be imported
+    |
+    |
+    ├─-- src                <- Source code for use in this project.
+    |   └───-- __init__.py    
+    |   |
+    |   ├─-- data           <- Scripts to download or generate data
+    |   |   └── make_dataset.py
+    |   |
+    |   ├─-- features       <- Scripts to turn raw data into features for modeling
+    |   |   └── construct_features.py
+    |   |   └──  feature_analysis.py
+    |   |   └── parent_features.py
+    |   |
+    |   ├─-- models         <- Scripts to train models and then use trained models to make predictions         
+    |   |   └─── model_test.py
+    |   |   └─── model_train.py
+    |   |
+    |   └───-- visualization  <- Scripts to create exploratory and results oriented visualizations
+    |       └───-- visualize.py
+    |
+    ├─-- tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 --------
 <br/><br/>
 ===========================================================================
