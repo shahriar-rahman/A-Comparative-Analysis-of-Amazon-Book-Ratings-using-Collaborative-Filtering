@@ -1,21 +1,10 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='amazon_ratings',
+    name='src',
     packages=find_packages(),
-    version='0.8.0',
-    description='Juxtaposing different Recommender Algorithms by utilizing the concept of Collaborative Filtering to analyze the Amazon Book Ratings. '
-                'the Audible website.',
-    author='Shahriar Rahman',
+    version='0.1.0',
+    description='This is a simple data science template project folder.',
+    author='Shahriar',
     license='MIT License',
-    author_email='shahriarrahman1101@gmail.com',
-    install_requires=[
-        'pandas',
-        'missingNo',
-        'matplotlib',
-        'seaborn',
-        'scikit-learn',
-        'scikit-surprise',
-        'plotly',
-        'numpy',
-    ],
+)
