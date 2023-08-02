@@ -16,12 +16,12 @@ spoken words, advertisements, reference letters, global surveys, and so forth. T
 upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
 attributed to websites, movies, music, arts, articles, jokes, finance, and books. Therefore, it is no surprise that algorithms 
 such as Collaborative Filtering (CF) have been widely adopted as one of the crucial pieces of the large puzzle that is the 
-recommenders.
+recommenders. 
 
 <br/><br/>
 
 ### ◘ Objective
-The primary incentive of this research is to:
+The primary incentive of this research is to: 
 * Initiate an exploratory analysis of the acquired data to find indispensable patterns of the feature that makes up the data.
 * Conduct a comparative analysis of features.
 * Utilize multiple types of CF on the processed features.
