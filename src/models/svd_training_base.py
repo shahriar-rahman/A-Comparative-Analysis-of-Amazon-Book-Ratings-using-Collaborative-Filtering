@@ -2,6 +2,7 @@ import os
 import sys
 import pandas as pd
 import joblib as jb
+from surprise import NMF, SVD
 from surprise import accuracy
 from surprise import KNNWithMeans
 from surprise import Dataset, Reader
@@ -13,9 +14,9 @@ from py_utils import ml_utils
 split_test = 0.25
 
 
-class KnnTrain:
+class SVDTrain:
     def __init__(self):
-        self.current_model = 'KNNWithMeans'
+        self.current_model = 'SVD'
         self.data_type = 'base'
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
@@ -58,6 +59,6 @@ class KnnTrain:
 
 
 if __name__ == "__main__":
-    main = KnnTrain()
+    main = SVDTrain()
     main.data_wrangling()
     main.train_model()

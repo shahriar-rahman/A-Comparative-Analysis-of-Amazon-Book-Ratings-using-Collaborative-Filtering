@@ -16,7 +16,7 @@ split_test = 0.25
 class KnnTrain:
     def __init__(self):
         self.current_model = 'KNNWithMeans'
-        self.data_type = 'base'
+        self.data_type = 'hybrid'
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
         self.df_book_ratings = pd.read_csv('../../data/Books_rating.csv')
@@ -47,10 +47,34 @@ class KnnTrain:
         self.gu.view_dataframe(self.df_book_ratings, 20)
         print("\nShape of the Dataframe with substantial features: ", self.df_book_ratings.shape)
 
+        # Analyze reviews
+        sia = SentimentIntensityAnalyzer()
+        self.df_book_ratings['sentiment'] = self.df_book_ratings['review']\
+            .apply(lambda x: sia.polarity_scores(x)['compound'])
+
+        # Normalize Sentiment values
+        self.df_book_ratings['sentiment'] = (self.df_book_ratings['sentiment'] - self.df_book_ratings['sentiment']
+                                             .min()) / (self.df_book_ratings['sentiment'].max() -
+                                                        self.df_book_ratings['sentiment'].min())
+
+        # Filter contradictions
+        self.df_book_ratings = self.df_book_ratings.loc[~((self.df_book_ratings.rating.isin([1, 2]))
+                                                          & (self.df_book_ratings['sentiment'] > 0.6))]
+        self.df_book_ratings = self.df_book_ratings.loc[~((self.df_book_ratings.rating.isin([4, 5]))
+                                                          & (self.df_book_ratings['sentiment'] < 0.6))]
+
+        # Combine Labels
+        self.df_book_ratings['hybrid_score'] = self.df_book_ratings['rating'] * self.df_book_ratings['sentiment']
+
+        self.df_book_ratings = self.df_book_ratings.reset_index()
+        print("\n• Hybrid Processing:")
+        self.gu.view_dataframe(self.df_book_ratings, 20)
+        print("\nShape of the Dataframe after Hybrid Processing: ", self.df_book_ratings.shape)
+
     def train_model(self):
         # Model Parameters Extraction
-        path = '../../data/test_data.csv'
-        columns = ['user_id', 'book_id', 'rating']
+        path = f'../../data/test_data_{self.data_type}.csv'
+        columns = ['user_id', 'book_id', 'hybrid_score']
 
         train, test = self.ml.partition_data(self.df_book_ratings, columns, split_test)
         self.ml.construct_model(self.current_model, train, self.data_type)

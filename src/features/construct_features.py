@@ -38,11 +38,11 @@ class ConstructFeatures:
 
     @staticmethod
     def display_dataframe(name, df, contents):
-        table = df.head(contents)
+        df_table = df.head(contents)
         print('\n')
         print("=" * 150)
         print("◘ ", name, " Dataframe:")
-        print(table.to_string())
+        print(df_table.to_string())
         print("=" * 150)
 
     @staticmethod
@@ -125,9 +125,10 @@ class ConstructFeatures:
 
         data_values = np.array([duplicated_cells, len(self.df_rating)-duplicated_cells])
         explode = [0.2, 0]
+        bbox_to_anchor = (1, 1)
         labels = ["Duplicate Cells", "Unique Cells"]
-        title = "Pie Chart: Unique vs Duplicate cells (Pre-processing)"
-        self.visualize.plot_pie(data_values, explode, labels, title)
+        text = "Pie Chart: Unique vs Duplicate cells (Pre-processing)"
+        self.visualize.plot_pie(data_values, explode, labels, text, bbox_to_anchor)
 
         self.df_rating = self.df_rating.drop_duplicates(subset=None, keep='first', inplace=False,
                                                         ignore_index=False)
@@ -144,9 +145,10 @@ class ConstructFeatures:
 
         data_values = np.array([duplicated_cells, len(self.df_rating) - duplicated_cells])
         explode = [0.2, 0]
+        bbox_to_anchor = (1, 1)
         labels = ["Duplicate Cells", "Unique Cells"]
-        title = "Pie Chart: Unique vs Duplicate cells (Post-processing)"
-        self.visualize.plot_pie(data_values, explode, labels, title)
+        text = "Pie Chart: Unique vs Duplicate cells (Post-processing)"
+        self.visualize.plot_pie(data_values, explode, labels, text, bbox_to_anchor)
 
         # Maintain Feature consistency
         year = 0

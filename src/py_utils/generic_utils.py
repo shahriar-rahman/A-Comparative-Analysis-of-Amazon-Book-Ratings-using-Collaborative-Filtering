@@ -42,6 +42,11 @@ class GenericUtils:
         else:
             print("> Dataframe validated.")
 
+    @staticmethod
+    def save_dataframe(data, columns, path):
+        df_test = pd.DataFrame(data, columns=columns)
+        df_test.to_csv(path, sep=',')
+
 
 if __name__ == "__main__":
     main = GenericUtils()
