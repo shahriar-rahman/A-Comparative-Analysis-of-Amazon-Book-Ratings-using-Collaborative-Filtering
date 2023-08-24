@@ -16,7 +16,7 @@ spoken words, advertisements, reference letters, global surveys, and so forth. T
 upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
 attributed to websites, movies, music, arts, articles, jokes, finance, and books. Therefore, it is no surprise that algorithms 
 such as Collaborative Filtering (CF) have been widely adopted as one of the crucial pieces of the large puzzle that is the 
-recommenders.  
+recommenders.   
 
 <br/><br/>
 
