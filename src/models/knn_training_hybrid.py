@@ -19,7 +19,7 @@ class KnnTrain:
         self.data_type = 'hybrid'
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
-        self.df_book_ratings = pd.read_csv('../../data/Books_rating.csv')
+        self.df_book_ratings = pd.read_csv('../../data_set/Books_rating.csv')
 
     def data_wrangling(self):
         # Feature Structuring
@@ -73,7 +73,7 @@ class KnnTrain:
 
     def train_model(self):
         # Model Parameters Extraction
-        path = f'../../data/test_data_{self.data_type}.csv'
+        path = f'../../data_set/test_data_{self.data_type}.csv'
         columns = ['user_id', 'book_id', 'hybrid_score']
 
         train, test = self.ml.partition_data(self.df_book_ratings, columns, split_test)

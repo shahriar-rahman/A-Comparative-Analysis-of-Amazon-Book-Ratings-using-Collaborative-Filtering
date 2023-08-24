@@ -20,7 +20,7 @@ class NMFTrain:
         self.data_type = 'hybrid'
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
-        self.df_book_ratings = pd.read_csv('../../data/Books_rating.csv')
+        self.df_book_ratings = pd.read_csv('../../data_set/Books_rating.csv')
 
     def data_wrangling(self):
         # Feature Structuring
@@ -74,7 +74,7 @@ class NMFTrain:
 
     def train_model(self):
         # Model Parameters Extraction
-        path = '../../data/test_data.csv'
+        path = '../../data_set/test_data.csv'
         columns = ['user_id', 'book_id', 'hybrid_score']
 
         train, test = self.ml.partition_data(self.df_book_ratings, columns, split_test)

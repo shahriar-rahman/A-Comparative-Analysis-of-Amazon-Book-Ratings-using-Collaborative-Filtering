@@ -13,7 +13,7 @@ class KnnTest:
         self.data_type = 'base'
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
-        self.df_book_ratings = pd.read_csv('../../data/test_data.csv')
+        self.df_book_ratings = pd.read_csv('../../data_set/test_data.csv')
 
     def test_model(self):
         # Load Model Parameters
