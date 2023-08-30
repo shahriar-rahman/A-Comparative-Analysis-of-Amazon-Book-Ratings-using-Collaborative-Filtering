@@ -14,9 +14,9 @@ from py_utils import ml_utils
 split_test = 0.25
 
 
-class NMFTrain:
+class SVDTrain:
     def __init__(self):
-        self.current_model = 'SVD'
+        self.current_model = 'NMF'
         self.data_type = 'test_case'
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
@@ -58,6 +58,6 @@ class NMFTrain:
 
 
 if __name__ == "__main__":
-    main = NMFTrain()
+    main = SVDTrain()
     main.data_wrangling()
     main.train_model()

@@ -94,6 +94,21 @@ class MlUtils:
                 mse_list.append(mse)
                 mae_list.append(mae)
 
+        elif algorithm == 'NMF':
+            title = 'NMF Hyperparameter Evaluation'
+            x_label = 'Number of Factors'
+
+            # Train an SVD With Means model on the specified score
+            for i in range(10, 80, 10):
+                model = NMF(n_factors=i, random_state=42)
+                model.fit(train_data)
+
+                r_mse, mse, mae = self.evaluate_model(model, test_data, return_value=True)
+
+                r_mse_list.append(r_mse)
+                mse_list.append(mse)
+                mae_list.append(mae)
+
             x = range(10, 80, 10)
             self.visualize.plot_graph(x, r_mse_list, title, x_label, 'RMSE')
             self.visualize.plot_graph(x, mse_list, title, x_label, 'MSE')
