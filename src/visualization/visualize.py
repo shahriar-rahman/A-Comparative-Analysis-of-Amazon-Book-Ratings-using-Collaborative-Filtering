@@ -150,6 +150,15 @@ class Visualize:
             plt.grid()
             plt.show()
 
+    def plot_graph(self, x, y, title, x_label, y_label):
+        self.graph_settings()
+
+        plt.plot(x, y)
+        plt.title(title)
+        plt.xlabel(x_label)
+        plt.ylabel(y_label)
+        plt.show()
+
     @staticmethod
     def graph_settings():
         # Customizable Set-ups
