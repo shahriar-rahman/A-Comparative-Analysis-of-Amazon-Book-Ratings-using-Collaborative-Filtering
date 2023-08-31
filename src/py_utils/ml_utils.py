@@ -79,7 +79,22 @@ class MlUtils:
         mse_list = []
         mae_list = []
 
-        if algorithm == 'SVD':
+        if algorithm == 'KNNWithMeans':
+            title = 'Knn Hyperparameter Evaluation'
+            x_label = 'Number of k-points'
+
+            for i in range(10, 80, 10):
+                # Train an KNN With Means model on the specified score
+                model = KNNWithMeans(k=i, sim_options={'name': 'pearson_baseline', 'user_based': True})
+                model.fit(train_data)
+
+                r_mse, mse, mae = self.evaluate_model(model, test_data, return_value=True)
+
+                r_mse_list.append(r_mse)
+                mse_list.append(mse)
+                mae_list.append(mae)
+
+        elif algorithm == 'SVD':
             title = 'SVD Hyperparameter Evaluation'
             x_label = 'Number of Factors'
 
@@ -109,10 +124,10 @@ class MlUtils:
                 mse_list.append(mse)
                 mae_list.append(mae)
 
-            x = range(10, 80, 10)
-            self.visualize.plot_graph(x, r_mse_list, title, x_label, 'RMSE')
-            self.visualize.plot_graph(x, mse_list, title, x_label, 'MSE')
-            self.visualize.plot_graph(x, mae_list, title, x_label, 'MAE')
+        x = range(10, 80, 10)
+        self.visualize.plot_graph(x, r_mse_list, title, x_label, 'RMSE')
+        self.visualize.plot_graph(x, mse_list, title, x_label, 'MSE')
+        self.visualize.plot_graph(x, mae_list, title, x_label, 'MAE')
 
     @staticmethod
     def load_model(model_path):
