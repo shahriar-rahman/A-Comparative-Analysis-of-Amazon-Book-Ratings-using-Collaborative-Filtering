@@ -11,8 +11,8 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
 <br/>
 
 ## ◘ Navigation
-- [Abstract](#-abstract)
 - [Introduction](#-introduction)
+    - [Abstract](#-abstract)
     - [Background](#-background)
     - [Recommender Engine Block Diagram](#-block-diagram-of-a-recommender-engine)
     - [Objectives](#-objectives)
@@ -29,13 +29,12 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
 
 <br/><br/>
 
+## ◘ Introduction
+
 ## ◘ Abstract
 In recent years, Recommendation Systems (RS) have been playing a pivotal role in the world of e-commerce as the utilization of Collaborative Filtering (CF) is getting more popular by the day and has transitioned into an instrumental asset for the RS. This study proposes six different iterations of CF that will act as a base foundation on which many services in the modern world can rely. The models are implemented using three of the most popular algorithms: k-nearest Neighbour (KNN), Singular Value Decomposition (SVD), and Non-negative Matrix Factorization (NMF). Each model is trained using the dataset, acquired from Amazon Book Reviews, and two separate datasets were generated: the first consists of highly processed data of the initial data, and the last consists of hybrid values of the processed data and the Sentimental Analysis of the customer reviews using language processing method. The models evaluated give satisfactory performance with KNN providing the best possible results proving it to be an effective RS tool that can be applied in various industries. 
 
-<br/><br/>
-
-## ◘ Introduction
-
+<br/>
 ### • Background
 People depend on recommender systems on a regular basis, whether for news updates, stock markets, traveling guides, 
 spoken words, advertisements, reference letters, global surveys, and so forth. The natural social procedure is heavily expanded 
