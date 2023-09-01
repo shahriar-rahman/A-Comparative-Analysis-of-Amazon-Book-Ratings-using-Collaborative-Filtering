@@ -84,6 +84,7 @@ Amazon is an American multinational technology company that focuses primarily on
 The model uses Collaborative filtering to evaluate the books' reviews on Amazon. The review data contains the feedback of over 3 million users on unique books and it contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1992 - July 2016. The book detail dataset contains information of all the unique books. The file is built by using Google Book API to get details information about books it rated in the first file. The meta-data of the book attributes of the dataset is provided below.
 
 <br/>
+
 ### • Book Information
 
 | Original Attribute | Column Attribute | Data Format | Description |
