@@ -14,6 +14,7 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
 - [Abstract](#-abstract)
 - [Introduction](#-introduction)
     - [Background](#-background)
+    - [Recommender Engine Block Diagram](#-block-diagram-of-a-recommender-engine)
     - [Objectives](#-objectives)
 - [Technical Preliminaries](#-technical-preliminaries)
     - [Approach](#-approach)
@@ -45,6 +46,7 @@ In this study, several RS have been explored based on CF algorithms to determine
 
 <br/>
 
+### ◘ Block Diagram of a Recommender Engine
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/branch-updates/figures/Diagrams/block_rs.png)
 
 <br/>
