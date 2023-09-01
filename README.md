@@ -73,7 +73,7 @@ This research is classified into 6 steps:
 ### ◘ Dataset
 Amazon is an American multinational technology company that focuses primarily on e-commerce, online advertising, cloud computing, digital streaming, and artificial intelligence. Moreover, it has been often referred to as "one of the most influential economic and cultural forces in the world. As a result, the Amazon dataset is chosen for this research in order to establish a benchmark for the recommendation system for any company with historical data.
 
-The model uses Collaborative filtering to evaluate the books' reviews on Amazon. The review data contains the feedback of over 3 million users on unique books and it contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1992 - July 2016. The book detail dataset contains information of all the unique books. The file is built by using Google Book API to get details information about books it rated in the first file. The detailed attributes of the book detail dataset have been provided below.
+The model uses Collaborative filtering to evaluate the books' reviews on Amazon. The review data contains the feedback of over 3 million users on unique books and it contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1992 - July 2016. The book detail dataset contains information of all the unique books. The file is built by using Google Book API to get details information about books it rated in the first file. The meta-data of the book attributes of the dataset is provided below.
 
 <br/>
 
