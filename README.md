@@ -23,6 +23,9 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
     - [Book Ratings](#-book-ratings)
     - [Methodologies and Technologies](#-methodologies-and-technologies)
 - [Feature Analysis](#-feature-analysis)
+    - [Data Procesing](#-data-procesing)
+    - [Data Exploration](#-data-exploration)
+    - [Feature Analysis Summary Flowchart](#-feature-analysis-summary-flowchart)
 
 <br/><br/>
 
