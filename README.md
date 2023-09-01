@@ -125,7 +125,7 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 * Address duplicates & perform de-duplication
 * Maintain feature consistency
 * Deep Feature Exploration	
-* Construct SVD, NMF & K-Means models
+* Construct SVD, NMF & KNN models
 * Train & Evaluate the generalization of the models
 * Apply test set to the previously trained models
 * Compare & Analyze the results
