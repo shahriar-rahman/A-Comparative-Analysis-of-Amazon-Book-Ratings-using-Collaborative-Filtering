@@ -77,6 +77,7 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 
 |--|--|--|--|
 | Original Attribute | Column Attribute | Data Format | Description |
+|--|--|--|--|
 | ID | id | object | Book Identifier. |
 | Title | title | object | Book Title Name. |
 | Price | price | float64 | Price of the Book. |
