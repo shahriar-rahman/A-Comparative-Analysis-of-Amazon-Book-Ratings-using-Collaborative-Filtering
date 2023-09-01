@@ -45,7 +45,7 @@ In this study, several RS have been explored based on CF algorithms to determine
 
 <br/>
 
-[!alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/branch-updates/figures/Diagrams/block-rs.png)
+[alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/branch-updates/figures/Diagrams/block-rs.png)
 
 <br/>
 
