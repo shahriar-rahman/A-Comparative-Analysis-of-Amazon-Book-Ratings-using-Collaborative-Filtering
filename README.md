@@ -16,15 +16,19 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
     - [Background](#-background)
     - [Objectives](#-objectives)
 - [Technical Preliminaries](#-technical-preliminaries)
+    - [Approach](#-approach)
+    - [Methodologies and Technologies](#-methodologies-and-technologies)
 
-<br/>
+<br/><br/>
 
 ## ◘ Abstract
 In recent years, Recommendation Systems (RS) have been playing a pivotal role in the world of e-commerce as the utilization of Collaborative Filtering (CF) is getting more popular by the day and has transitioned into an instrumental asset for the RS. This study proposes six different iterations of CF that will act as a base foundation on which many services in the modern world can rely. The models are implemented using three of the most popular algorithms: k-nearest Neighbour (KNN), Singular Value Decomposition (SVD), and Non-negative Matrix Factorization (NMF). Each model is trained using the dataset, acquired from Amazon Book Reviews, and two separate datasets were generated: the first consists of highly processed data of the initial data, and the last consists of hybrid values of the processed data and the Sentimental Analysis of the customer reviews using language processing method. The models evaluated give satisfactory performance with KNN providing the best possible results proving it to be an effective RS tool that can be applied in various industries. 
 
-<br/>
+<br/><br/>
 
-### ◘ Introduction
+## ◘ Introduction
+
+### ◘ Background
 People depend on recommender systems on a regular basis, whether for news updates, stock markets, traveling guides, 
 spoken words, advertisements, reference letters, global surveys, and so forth. The natural social procedure is heavily expanded 
 upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
@@ -34,9 +38,9 @@ recommenders.
 
 One of the most important techniques for RS applications is the Collaborative Filtering Process. As stated before, nearly all popular websites like Amazon, YouTube, and Netflix use collaborative filtering as a part of their sophisticated RS. From a hypothetical standpoint, it works by performing a search on a large group of people and observing a smaller set of users with opinions, tastes, and preferences similar to a particular user. It looks at the items they like and amalgamates them to form a ranked list of suggestions. For instance, items for which the content is unavailable could still be recommended to customers through the ratings of other users. Moreover, CF recommendations are based on the quality of the products rated by similar customers instead of being dependent on the content. These methods can recommend items with a diverse range of contents, as long as the neighbors have already shown an interest in these aforementioned items. Research on CF can be classified into two types: instance-based methods and model-based methods.
 
-<br/><br/>
+<br/>
 
-### ◘ Objective
+### ◘ Objectives
 The primary incentive of this research is to: 
 * Initiate an exploratory analysis of the acquired data to find indispensable patterns of the feature that makes up the data.
 * Conduct a comparative analysis of features.
@@ -44,10 +48,9 @@ The primary incentive of this research is to:
 * Experiment with different Hyper-parameters to obtain a well-organized tuning for the models.
 * Compare and analyze which models display the most robust generalization.
 
-<br/>
+<br/><br/>
 
 ## ◘ Technical Preliminaries
-
 
 ### ◘ Approach
 This research is classified into 6 steps:
@@ -64,7 +67,7 @@ This research is classified into 6 steps:
 
 <br/>
 
-### ◘ Methodologies & Technologies applied
+### ◘ Methodologies and Technologies
 * Diagnose and fix structural errors
 * Check and Clean data
 * Address duplicates & perform de-duplication
