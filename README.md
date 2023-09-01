@@ -32,7 +32,7 @@ In recent years, Recommendation Systems (RS) have been playing a pivotal role in
 
 ## ◘ Introduction
 
-### ◘ Background
+### • Background
 People depend on recommender systems on a regular basis, whether for news updates, stock markets, traveling guides, 
 spoken words, advertisements, reference letters, global surveys, and so forth. The natural social procedure is heavily expanded 
 upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
@@ -46,12 +46,12 @@ In this study, several RS have been explored based on CF algorithms to determine
 
 <br/>
 
-### ◘ Block Diagram of a Recommender Engine
+### • Block Diagram of a Recommender Engine
 ![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/branch-updates/figures/Diagrams/block_rs.png)
 
 <br/>
 
-### ◘ Objectives
+### • Objectives
 The primary incentive of this research is to: 
 * Initiate an exploratory analysis of the acquired data to find indispensable patterns of the feature that makes up the data.
 * Conduct a comparative analysis of features.
@@ -63,7 +63,7 @@ The primary incentive of this research is to:
 
 ## ◘ Technical Preliminaries
 
-### ◘ Approach
+### • Approach
 This research is classified into 6 steps:
 1.	Identifying the problem and its data sources.
 2.	Construct the raw data into clean processed data and explore it using both Jupyter Notebooks and PyCharm IDE.
@@ -78,13 +78,13 @@ This research is classified into 6 steps:
 
 <br/>
 
-### ◘ Datasets
+### • Datasets
 Amazon is an American multinational technology company that focuses primarily on e-commerce, online advertising, cloud computing, digital streaming, and artificial intelligence. Moreover, it has been often referred to as "one of the most influential economic and cultural forces in the world. As a result, the Amazon dataset is chosen for this research in order to establish a benchmark for the recommendation system for any company with historical data.
 
 The model uses Collaborative filtering to evaluate the books' reviews on Amazon. The review data contains the feedback of over 3 million users on unique books and it contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1992 - July 2016. The book detail dataset contains information of all the unique books. The file is built by using Google Book API to get details information about books it rated in the first file. The meta-data of the book attributes of the dataset is provided below.
 
 <br/>
-### ◘ Book Information
+### • Book Information
 
 | Original Attribute | Column Attribute | Data Format | Description |
 |--|--|--|--|
@@ -101,7 +101,7 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 
 <br/>
 
-### ◘ Book Ratings
+### • Book Ratings
 
 | Original Attribute | Column Attribute | Data Format | Non-Nulls | Description |
 |--|--|--|--|
@@ -117,10 +117,9 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 | Ratings Count | ratings_count | float64 | 49752 | The average rating for the Book. |
 
 
-
 <br/>
 
-### ◘ Methodologies and Technologies
+### • Methodologies and Technologies
 * Diagnose and fix structural errors
 * Check and Clean data
 * Address duplicates & perform de-duplication
@@ -131,7 +130,7 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 * Apply test set to the previously trained models
 * Compare & Analyze the results
 
-<br/>
+<br/><br/>
 
 ### ◘ Required Modules
 * pandas 2.0.0
