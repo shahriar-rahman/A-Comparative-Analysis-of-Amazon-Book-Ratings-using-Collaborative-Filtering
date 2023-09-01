@@ -17,7 +17,9 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
     - [Objectives](#-objectives)
 - [Technical Preliminaries](#-technical-preliminaries)
     - [Approach](#-approach)
-    - [Dataset](#-dataset)
+    - [Dataset](#-datasets)
+    - [Book Information](#-book-information)
+    - [Book Ratings](#-book-ratings)
     - [Methodologies and Technologies](#-methodologies-and-technologies)
 
 <br/><br/>
@@ -70,12 +72,13 @@ This research is classified into 6 steps:
 
 <br/>
 
-### ◘ Dataset
+### ◘ Datasets
 Amazon is an American multinational technology company that focuses primarily on e-commerce, online advertising, cloud computing, digital streaming, and artificial intelligence. Moreover, it has been often referred to as "one of the most influential economic and cultural forces in the world. As a result, the Amazon dataset is chosen for this research in order to establish a benchmark for the recommendation system for any company with historical data.
 
 The model uses Collaborative filtering to evaluate the books' reviews on Amazon. The review data contains the feedback of over 3 million users on unique books and it contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1992 - July 2016. The book detail dataset contains information of all the unique books. The file is built by using Google Book API to get details information about books it rated in the first file. The meta-data of the book attributes of the dataset is provided below.
 
 <br/>
+### ◘ Book Information
 
 | Original Attribute | Column Attribute | Data Format | Description |
 |--|--|--|--|
@@ -89,6 +92,25 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 | Review Time | review/time | object | Time of giving the Review. |
 | Review Summary | review/summary | object | The summary of a text Review.|
 | Review Text | review/text | object | The full text of a Review. |
+
+<br/>
+
+### ◘ Book Ratings
+
+| Original Attribute | Column Attribute | Data Format | Non-Nulls | Description |
+|--|--|--|--|
+| Title | title | object | 212403 | Book Title. |
+| Description | description | object | 143962 | Description of Book. |
+| Authors | authors | object | 180991 | Name of book Authors. |
+| Image | image | object | 160329 | URL for the Book cover. |
+| Preview Link | preview_link | object | 188568 | Link to access Book on Google books. |
+| Publisher | publisher | object | 136518 | Name of the Publisher. |
+| Published Date | published_date | object | 187099 | The date of Publish. |
+| Info Link | info_link | object | 188568 | Link to get more information about the book on Google Books. |
+| Categories | categories | object | 171205 | Genres of Books. |
+| Ratings Count | ratings_count | float64 | 49752 | The average rating for the Book. |
+
+
 
 <br/>
 
