@@ -22,6 +22,7 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
     - [Book Information](#-book-information)
     - [Book Ratings](#-book-ratings)
     - [Methodologies and Technologies](#-methodologies-and-technologies)
+- [Feature Analysis](#-feature-analysis)
 
 <br/><br/>
 
@@ -117,7 +118,6 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 | Categories | categories | object | 171205 | Genres of Books. |
 | Ratings Count | ratings_count | float64 | 49752 | The average rating for the Book. |
 
-
 <br/>
 
 ### • Methodologies and Technologies
@@ -130,6 +130,46 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 * Train & Evaluate the generalization of the models
 * Apply test set to the previously trained models
 * Compare & Analyze the results
+
+<br/><br/>
+
+## ◘ Feature Analysis
+The dataset contains two files: book ratings and book information. The entire exploratory process is divided into two steps. One of them is data processing and another one is data analysis. The entire codes of the feature analysis as well as data exploration can be accessed [from this link](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/branch-updates/notebooks/feature_exploration.ipynb).
+
+<br/>
+
+### • Data Procesing
+1. Inquire structural integrity
+2. Enhance data accessibility
+3. Fix Structural Issues
+4. Data cleaning
+5. Find duplicates and perform the De-duplication process
+6. Validate de-duplication
+7. Maintain Feature consistency
+8. Review Data frame
+
+<br/>
+
+### • Data Exploration
+1. Book Prices and Ratings
+2. Density Inspection
+3. Pearson Correlation for Numerical features
+4. Top 10 Book Genre
+5. Book Ratings' effect on its Prices
+6. Books most purchased
+7. Highest Mean Rated Books
+8. Most Expensive Books
+9. Top Rated Books accumulating over 3500 ratings
+10. Aggregate books for a particular category
+11. Authors with the most published books
+12. Most Active Years for authors
+13. Authors working with multiple genres
+14. Review Data frame
+
+<br/>
+
+### • Feature Analysis Summary Flowchart
+![alt text](https://github.com/shahriar-rahman/EDA-Amazon-Books-Reviews/blob/main/img/img1.JPG)
 
 <br/><br/>
 
