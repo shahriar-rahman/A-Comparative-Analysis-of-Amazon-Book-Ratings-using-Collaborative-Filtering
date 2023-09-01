@@ -104,7 +104,7 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 ### • Book Ratings
 
 | Original Attribute | Column Attribute | Data Format | Non-Nulls | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | Title | title | object | 212403 | Book Title. |
 | Description | description | object | 143962 | Description of Book. |
 | Authors | authors | object | 180991 | Name of book Authors. |
