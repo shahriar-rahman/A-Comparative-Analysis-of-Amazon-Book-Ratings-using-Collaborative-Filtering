@@ -2,7 +2,7 @@
 # A Comparative Analysis of Amazon Book Ratings Using Collaborative Filtering
 
 Constructing Recommender Models by analyzing the Amazon Book Ratings data and juxtaposing different algorithms based on 
-the concept of Collaborative Filtering to perceive the ideal approach. This research is a work in progress and is an expansion of the [Exploratory Data Analysis of Amazon Books Reviews](https://github.com/shahriar-rahman/EDA-Amazon-Books-Reviews)
+the concept of Collaborative Filtering to perceive the ideal approach. This research is a work in progress and is an expansion of the [Exploratory Data Analysis of Amazon Books Reviews](https://github.com/shahriar-rahman/EDA-Amazon-Books-Reviews).
 
 <br/>
 
@@ -11,9 +11,10 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
 <br/>
 
 ## ◘ Navigation
-- [Abstract](#-abstract)
 - [Introduction](#-introduction)
+    - [Abstract](#-abstract)
     - [Background](#-background)
+    - [Recommender Engine Block Diagram](#-block-diagram-of-a-recommender-engine)
     - [Objectives](#-objectives)
 - [Technical Preliminaries](#-technical-preliminaries)
     - [Approach](#-approach)
@@ -21,17 +22,21 @@ the concept of Collaborative Filtering to perceive the ideal approach. This rese
     - [Book Information](#-book-information)
     - [Book Ratings](#-book-ratings)
     - [Methodologies and Technologies](#-methodologies-and-technologies)
-
-<br/><br/>
-
-## ◘ Abstract
-In recent years, Recommendation Systems (RS) have been playing a pivotal role in the world of e-commerce as the utilization of Collaborative Filtering (CF) is getting more popular by the day and has transitioned into an instrumental asset for the RS. This study proposes six different iterations of CF that will act as a base foundation on which many services in the modern world can rely. The models are implemented using three of the most popular algorithms: k-nearest Neighbour (KNN), Singular Value Decomposition (SVD), and Non-negative Matrix Factorization (NMF). Each model is trained using the dataset, acquired from Amazon Book Reviews, and two separate datasets were generated: the first consists of highly processed data of the initial data, and the last consists of hybrid values of the processed data and the Sentimental Analysis of the customer reviews using language processing method. The models evaluated give satisfactory performance with KNN providing the best possible results proving it to be an effective RS tool that can be applied in various industries. 
+- [Feature Analysis](#-feature-analysis)
+    - [Data Procesing](#-data-procesing)
+    - [Data Exploration](#-data-exploration)
+    - [Feature Analysis Summary Flowchart](#-feature-analysis-summary-flowchart)
 
 <br/><br/>
 
 ## ◘ Introduction
 
-### ◘ Background
+### • Abstract
+In recent years, Recommendation Systems (RS) have been playing a pivotal role in the world of e-commerce as the utilization of Collaborative Filtering (CF) is getting more popular by the day and has transitioned into an instrumental asset for the RS. This study proposes six different iterations of CF that will act as a base foundation on which many services in the modern world can rely. The models are implemented using three of the most popular algorithms: k-nearest Neighbour (KNN), Singular Value Decomposition (SVD), and Non-negative Matrix Factorization (NMF). Each model is trained using the dataset, acquired from Amazon Book Reviews, and two separate datasets were generated: the first consists of highly processed data of the initial data, and the last consists of hybrid values of the processed data and the Sentimental Analysis of the customer reviews using language processing method. The models evaluated give satisfactory performance with KNN providing the best possible results proving it to be an effective RS tool that can be applied in various industries. 
+
+<br/>
+
+### • Background
 People depend on recommender systems on a regular basis, whether for news updates, stock markets, traveling guides, 
 spoken words, advertisements, reference letters, global surveys, and so forth. The natural social procedure is heavily expanded 
 upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
@@ -45,11 +50,12 @@ In this study, several RS have been explored based on CF algorithms to determine
 
 <br/>
 
-![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/branch-updates/figures/Diagrams/block-rs.png)
+### • Block Diagram of a Recommender Engine
+![alt text](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/branch-updates/figures/Diagrams/block_rs.png)
 
 <br/>
 
-### ◘ Objectives
+### • Objectives
 The primary incentive of this research is to: 
 * Initiate an exploratory analysis of the acquired data to find indispensable patterns of the feature that makes up the data.
 * Conduct a comparative analysis of features.
@@ -61,7 +67,7 @@ The primary incentive of this research is to:
 
 ## ◘ Technical Preliminaries
 
-### ◘ Approach
+### • Approach
 This research is classified into 6 steps:
 1.	Identifying the problem and its data sources.
 2.	Construct the raw data into clean processed data and explore it using both Jupyter Notebooks and PyCharm IDE.
@@ -76,13 +82,14 @@ This research is classified into 6 steps:
 
 <br/>
 
-### ◘ Datasets
+### • Datasets
 Amazon is an American multinational technology company that focuses primarily on e-commerce, online advertising, cloud computing, digital streaming, and artificial intelligence. Moreover, it has been often referred to as "one of the most influential economic and cultural forces in the world. As a result, the Amazon dataset is chosen for this research in order to establish a benchmark for the recommendation system for any company with historical data.
 
 The model uses Collaborative filtering to evaluate the books' reviews on Amazon. The review data contains the feedback of over 3 million users on unique books and it contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1992 - July 2016. The book detail dataset contains information of all the unique books. The file is built by using Google Book API to get details information about books it rated in the first file. The meta-data of the book attributes of the dataset is provided below.
 
 <br/>
-### ◘ Book Information
+
+### • Book Information
 
 | Original Attribute | Column Attribute | Data Format | Description |
 |--|--|--|--|
@@ -99,10 +106,10 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 
 <br/>
 
-### ◘ Book Ratings
+### • Book Ratings
 
 | Original Attribute | Column Attribute | Data Format | Non-Nulls | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | Title | title | object | 212403 | Book Title. |
 | Description | description | object | 143962 | Description of Book. |
 | Authors | authors | object | 180991 | Name of book Authors. |
@@ -114,22 +121,60 @@ The model uses Collaborative filtering to evaluate the books' reviews on Amazon.
 | Categories | categories | object | 171205 | Genres of Books. |
 | Ratings Count | ratings_count | float64 | 49752 | The average rating for the Book. |
 
-
-
 <br/>
 
-### ◘ Methodologies and Technologies
+### • Methodologies and Technologies
 * Diagnose and fix structural errors
 * Check and Clean data
 * Address duplicates & perform de-duplication
 * Maintain feature consistency
 * Deep Feature Exploration	
-* Construct SVD, NMF & K-Means models
+* Construct SVD, NMF & KNN models
 * Train & Evaluate the generalization of the models
 * Apply test set to the previously trained models
 * Compare & Analyze the results
 
+<br/><br/>
+
+## ◘ Feature Analysis
+The dataset contains two files: book ratings and book information. The entire exploratory process is divided into two steps. One of them is data processing and another one is data analysis. The entire codes of the feature analysis as well as data exploration can be accessed [from this link](https://github.com/shahriar-rahman/A-Comparative-Analysis-of-Amazon-Book-Ratings-using-Collaborative-Filtering/blob/branch-updates/notebooks/feature_exploration.ipynb).
+
 <br/>
+
+### • Data Procesing
+1. Inquire structural integrity
+2. Enhance data accessibility
+3. Fix Structural Issues
+4. Data cleaning
+5. Find duplicates and perform the De-duplication process
+6. Validate de-duplication
+7. Maintain Feature consistency
+8. Review Data frame
+
+<br/>
+
+### • Data Exploration
+1. Book Prices and Ratings
+2. Density Inspection
+3. Pearson Correlation for Numerical features
+4. Top 10 Book Genre
+5. Book Ratings' effect on its Prices
+6. Books most purchased
+7. Highest Mean Rated Books
+8. Most Expensive Books
+9. Top Rated Books accumulating over 3500 ratings
+10. Aggregate books for a particular category
+11. Authors with the most published books
+12. Most Active Years for authors
+13. Authors working with multiple genres
+14. Review Data frame
+
+<br/>
+
+### • Feature Analysis Summary Flowchart
+![alt text](https://github.com/shahriar-rahman/EDA-Amazon-Books-Reviews/blob/main/img/img1.JPG)
+
+<br/><br/>
 
 ### ◘ Required Modules
 * pandas 2.0.0
