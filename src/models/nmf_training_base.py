@@ -18,6 +18,7 @@ class NMFTrain:
     def __init__(self):
         self.current_model = 'NMF'
         self.data_type = 'base'
+        self.factors = 20
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
         self.df_book_ratings = pd.read_csv('../../data_set/Books_rating.csv')
@@ -54,7 +55,7 @@ class NMFTrain:
         columns = ['user_id', 'book_id', 'rating']
 
         train, test = self.ml.partition_data(self.df_book_ratings, columns, split_test)
-        self.ml.construct_model(self.current_model, train, self.data_type)
+        self.ml.construct_model(self.current_model, train, self.data_type, self.factors)
         self.gu.save_dataframe(test, columns, path)
 
 
