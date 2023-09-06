@@ -1,5 +1,5 @@
 ===========================================================================
-# A Comparative Analysis of Amazon Book Ratings Using Collaborative Filtering 
+# A Comparative Analysis of Amazon Book Ratings Using Collaborative Filtering
 
 Constructing Recommender Models by analyzing the Amazon Book Ratings data and juxtaposing different algorithms based on 
 the concept of Collaborative Filtering to perceive the ideal approach. This research is a work in progress and is an expansion of the [Exploratory Data Analysis of Amazon Books Reviews](https://github.com/shahriar-rahman/EDA-Amazon-Books-Reviews).
