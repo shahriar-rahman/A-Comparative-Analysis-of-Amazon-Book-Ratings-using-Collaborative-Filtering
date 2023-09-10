@@ -17,8 +17,7 @@ split_test = 0.25
 class NMFTrain:
     def __init__(self):
         self.current_model = 'NMF'
-        self.data_type = 'hybrid'
-        self.factors = 20
+        self.data_type = 'test_case_hybrid'
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
         self.df_book_ratings = pd.read_csv('../../data_set/Books_rating.csv')
@@ -79,8 +78,7 @@ class NMFTrain:
         columns = ['user_id', 'book_id', 'hybrid_score']
 
         train, test = self.ml.partition_data(self.df_book_ratings, columns, split_test)
-        self.ml.construct_model(self.current_model, train, self.data_type, self.factors)
-        self.gu.save_dataframe(test, columns, path)
+        self.ml.model_test_case(self.current_model, train, test)
 
 
 if __name__ == "__main__":

@@ -46,22 +46,22 @@ class MlUtils:
             print('-' * 150)
 
     @staticmethod
-    def construct_model(algorithm, train_data, label_type):
+    def construct_model(algorithm, train_data, label_type, hyper_value):
         model = ''
 
         if algorithm == 'KNNWithMeans':
             # Train an KNN With Means model on the specified score
-            model = KNNWithMeans(k=50, sim_options={'name': 'pearson_baseline', 'user_based': True})
+            model = KNNWithMeans(k=hyper_value, sim_options={'name': 'pearson_baseline', 'user_based': True})
             model.fit(train_data)
 
         elif algorithm == 'NMF':
             # Train an NMF With Means model on the specified score
-            model = NMF(n_factors=20, random_state=42)
+            model = NMF(n_factors=hyper_value, random_state=42)
             model.fit(train_data)
 
         elif algorithm == 'SVD':
             # Train an SVD With Means model on the specified score
-            model = SVD(n_factors=70, random_state=42)
+            model = SVD(n_factors=hyper_value, random_state=42)
             model.fit(train_data)
 
         try:

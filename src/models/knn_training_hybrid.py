@@ -17,6 +17,7 @@ class KnnTrain:
     def __init__(self):
         self.current_model = 'KNNWithMeans'
         self.data_type = 'hybrid'
+        self.k_points = 20
         self.gu = generic_utils.GenericUtils()
         self.ml = ml_utils.MlUtils()
         self.df_book_ratings = pd.read_csv('../../data_set/Books_rating.csv')
@@ -77,7 +78,7 @@ class KnnTrain:
         columns = ['user_id', 'book_id', 'hybrid_score']
 
         train, test = self.ml.partition_data(self.df_book_ratings, columns, split_test)
-        self.ml.construct_model(self.current_model, train, self.data_type)
+        self.ml.construct_model(self.current_model, train, self.data_type, self.k_points)
         self.gu.save_dataframe(test, columns, path)
 
 
