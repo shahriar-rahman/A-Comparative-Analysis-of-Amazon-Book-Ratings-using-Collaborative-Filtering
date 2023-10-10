@@ -240,4 +240,14 @@ The dataset contains two files: book ratings and book information. The entire ex
 --------
 <br/><br/>
 
+| Index | Topic | Description |
+| :-: | :-: | :-: | 
+| 1 | [Dataset Source](https://aqs.epa.gov/aqsweb/airdata/download_files.html) | Air pollution dataset from the U.S. Environmental Protection Agency (EPA). |
+| 2 | [Dataset Distribution](https://www.kaggle.com/datasets/asjad99/air-quality-monitoring-2014/data) | Distributive Source for the Ozone Layer data. |
+| 3 | [Exploratory data analysis](https://www.oreilly.com/library/view/practical-statistics-for/9781492072935/ch01.html) | Practical Statistics for Data Scientists, 2nd Edition by Peter Bruce, Andrew Bruce, Peter Gedeck. |
+| 4 | [Exploratory Data Analysis Book by John Tukey](https://www.amazon.com/Exploratory-Data-Analysis-John-Tukey/dp/0201076160) | Introductory book is that of informal study of the data. |
+
+
+<br/>
+
 ===========================================================================
