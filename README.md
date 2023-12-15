@@ -61,7 +61,7 @@ The primary incentive of this research is to:
 * Conduct a comparative analysis of features.
 * Utilize multiple types of CF on the processed features.
 * Experiment with different Hyper-parameters to obtain a well-organized tuning for the models.
-* Compare and analyze which models display the most robust generalization.
+* Compare and analyze which models display the most robust generalization. 
 
 <br/><br/>
 
