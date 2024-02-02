@@ -42,7 +42,7 @@ spoken words, advertisements, reference letters, global surveys, and so forth. T
 upon by the aforementioned systems by assisting in sifting through massive chunks of data related to others which can be 
 attributed to websites, movies, music, arts, articles, jokes, finance, and books. Therefore, it is no surprise that algorithms 
 such as Collaborative Filtering (CF) have been widely adopted as one of the crucial pieces of the large puzzle that is the 
-recommenders. 
+recommenders.  
 
 One of the most important techniques for RS applications is the Collaborative Filtering Process. As stated before, nearly all popular websites like Amazon, YouTube, and Netflix use collaborative filtering as a part of their sophisticated RS. From a hypothetical standpoint, it works by performing a search on a large group of people and observing a smaller set of users with opinions, tastes, and preferences similar to a particular user. It looks at the items they like and amalgamates them to form a ranked list of suggestions. For instance, items for which the content is unavailable could still be recommended to customers through the ratings of other users. Moreover, CF recommendations are based on the quality of the products rated by similar customers instead of being dependent on the content. These methods can recommend items with a diverse range of contents, as long as the neighbors have already shown an interest in these aforementioned items. Research on CF can be classified into two types: instance-based methods and model-based methods.
 
